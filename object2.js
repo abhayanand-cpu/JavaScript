@@ -171,6 +171,19 @@ place(player1);
 health(player2);
 place(player2);
 
+//Temperature conversion
 
+let temp = parseFloat(prompt("Enter temperature in celsius"));
+
+let Fahrenheit = function toFahrenheit( temp ){
+    return ( 9/5 * temp ) + 32;
+};
+
+let kelvin = function toKelvin( temp ){
+    return ( temp + 273.15 );
+};
+
+console.log(Fahrenheit);
+console.log(kelvin);
 
 
