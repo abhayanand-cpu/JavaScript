@@ -129,18 +129,48 @@ function division( x, y ){
     return x / y;
 }
 
-let x = prompt("Enter 1st digit");
-let y = prompt("Enter 2nd digit");
+// let x = prompt("Enter 1st digit");
+// let y = prompt("Enter 2nd digit");
 
-x = parseInt(x);
-y = parseInt(y)
+// x = parseInt(x);
+// y = parseInt(y);
 
-let add = addition(x,y);
-let subs = substraction( x, y );
-let mul = multiplication( x, y );
-let div = division( x, y );
+// let add = addition(x,y);
+// let subs = substraction( x, y );
+// let mul = multiplication( x, y );
+// let div = division( x, y );
 
-console.log("addition of "+x+" and "+y+" is "+ add);
-console.log("substraction of "+x+" and "+y+" is "+ subs);
-console.log("multiplication of "+x+" and "+y+" is "+ mul);
-console.log("division of "+x+" and "+y+" is "+ div);
+// console.log("addition of "+x+" and "+y+" is "+ add);
+// console.log("substraction of "+x+" and "+y+" is "+ subs);
+// console.log("multiplication of "+x+" and "+y+" is "+ mul);
+// console.log("division of "+x+" and "+y+" is "+ div);
+
+let player1 = {
+    health: 5,
+    place: "Bhubaneswar"
+};
+let player2 = {
+    health: 8,
+    place: "Shrirampur"
+}
+
+function health( obj ){
+    console.log("Player health "+obj.health);
+}
+
+function place( obj ){
+    console.log("Player place "+obj.place);
+}
+
+health(player1);
+place(player1);
+
+player1.place = "Cuttack";
+place(player1);
+
+health(player2);
+place(player2);
+
+
+
+
