@@ -1,7 +1,0 @@
-input[class^="input"]{
-    border-radius: 10px;
-}
-
-a[href$="pdf"]{
-    color: cadetblue;
-}
