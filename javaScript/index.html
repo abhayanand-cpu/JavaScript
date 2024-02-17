@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>Income Tax</title>
+</head>
+<body>
+    <h4>INCOME AND TAX CALCULATOR</h4>
+    <h5>Income</h5>
+    <form>
+        <label for="aYear">Assessment Year</label>
+        <select name="year" id="ayear">
+            <option selected value="select">Select</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </select>
+        <br><br>
+        <label for="tPayer">Tax Payer</label>
+        <select name="year" id="ayear">
+            <option selected value="Individual">Individ</option>
+        </select>
+        <br><br>
+        <label for="Gender">Male / Female / Senior Citizen</label>
+        <select name="Gender" id="Gender">
+            <option selected value="select">Select</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="Senior Citizen">Senior Citizen</option>
+        </select>
+        <br><br>
+        <label for="income">Income from Salary (Income from salary after standard deduction of Rs.50000.)  </label>
+        <input type="text" id="income">
+        <br><br>
+        <label for="incomeHouse">Income From House Property</label>
+        <input type="text" id="incomeHouse">
+        <br><br>
+        <label for="incomeSources">Income From Other Sources</label>
+        <input type="text" id="incomeSources">
+        <br><br>
+        <label for="cGain">Capital Gain</label>
+        <input type="text" id="cGain">
+        <h5>Deduction</h5>
+        <label for="80C">(80C) PPF / ELSS / LIC</label>
+        <select name="80C" id="80C">
+            <option selected value="select">Select</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select>
+        <br><br>
+        <label for="NPS">NPS</label>
+        <select name="NPS" id="NPS">
+            <option selected value="select">Select</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select>
+        <br><br>
+        <label for="Ihealth">Health Insurance</label>
+        <select name="Ihealth" id="Ihealth">
+            <option selected value="select">Select</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select>
+        <button id="Calculate" onclick="Clc()">Calculate</button>
+    </form>
+    <br><br>
+</body>
+</html>
