@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js"></script>
+    
     <title>Income Tax</title>
 </head>
 <body>
+    <script src="index.js"></script>
     <h4>INCOME AND TAX CALCULATOR</h4>
     <h5>Income</h5>
     <form>
@@ -51,6 +52,8 @@
             <option value="yes">yes</option>
             <option value="no">no</option>
         </select>
+        <label for="decision1">,If yes then enter amount</label>
+        <input type="text" id="decision1">
         <br><br>
         <label for="NPS">NPS</label>
         <select name="NPS" id="NPS">
@@ -58,6 +61,8 @@
             <option value="yes">yes</option>
             <option value="no">no</option>
         </select>
+        <label for="decision2">,If yes then enter amount</label>
+        <input type="text" id="decision2">
         <br><br>
         <label for="Ihealth">Health Insurance</label>
         <select name="Ihealth" id="Ihealth">
@@ -65,8 +70,12 @@
             <option value="yes">yes</option>
             <option value="no">no</option>
         </select>
-        <button id="Calculate" onclick="Clc()">Calculate</button>
+        <label for="decision3">,If yes then enter amount</label>
+        <input type="text" id="decision3"><br><br>
+        <button id="Calculate" onclick="totalIncome()">Calculate</button>
     </form>
     <br><br>
+
+    
 </body>
 </html>
