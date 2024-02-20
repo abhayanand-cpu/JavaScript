@@ -5,7 +5,7 @@ function totalIncome(){
         let housePropety = parseInt(document.getElementById("incomeHouse").value);
         let otherSources = parseInt(document.getElementById("incomeSources").value);
         var totalIncome = incomeM + housePropety + otherSources;
-        console.log(totalIncome);
+        // console.log(totalIncome);
 
         function deductionTotal(){
 
@@ -43,12 +43,17 @@ function totalIncome(){
                 }
 
                 totalIncome -= deductionAmount;
-                console.log(totalIncome);
+                // console.log(totalIncome);
+                
         }
         deductionTotal();
-
-
+        
+        function taxRate(){
+                
+        
+        }
 }
+
 
 
 
