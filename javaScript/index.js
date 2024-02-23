@@ -49,9 +49,24 @@ function totalIncome(){
         deductionTotal();
         
         function taxRate(){
+                var taxApplied;
                 
-        
+                if( totalIncome <= 250000 ){
+                        taxApplied = "NIL";
+                }
+                else if ( totalIncome >= 250001 && totalIncome <= 500000 ) {
+                        taxApplied = totalIncome * 0.05;
+                }
+                else if( totalIncome >= 500001 && totalIncome <= 1000000 ){
+                        taxApplied = 12500 + totalIncome * 0.2;
+                }
+                else if ( totalIncome >= 1000000 ) {
+                        taxApplied = 112500 + totalIncome * 0.3;
+                }
+                return taxApplied;
         }
+        var t = taxRate();
+        var tax = document.getElementById("tax").innerHTML = "<br>your tax for this year Rs."+t;
 }
 
 

@@ -54,17 +54,20 @@ z(b);
 z(out);
 
 //shift()
+z("Shift");
 z(b);
 f = b.shift();
 z(b);
 z(f);
 
 //unshift
+z("Unshift");
 g = b.unshift(90);
 z(b);
 z(g);
 
 //delete
+z("delete");
 z(b);
 del = delete b[2];
 z(b);
@@ -89,5 +92,45 @@ z(b)
     z(a);
     z(b);
     z(c);
+}
+
+//Sorting
+
+{
+    z("Sorting");
+    let a = [ 5, 8, 222 ];
+    a.sort();
+    z(a);
+
+    b = [ 22,58,326 ];
+    b.sort(compare);
+    function compare( a, b ) {
+        return a - b;
+    }
+    z(b);
+}
+
+//Splice
+{
+    z("Splice");
+
+    let a = [1,45,83,57,25,85,644];
+    z(a);
+    store = a.splice( 3, 2, 874,2938,873489);
+    z(store);
+    z(a);
+}
+
+//Slice
+{
+    z("Slice");
+    let a = [1,45,83,57,25,85,644];
+    let store = a.slice(4);
+    z(a);
+    z(store);
+    let store2 = a.slice(2,3);
+    z(store2);
+    let store3 = a.slice(-1);
+    z(store3);
 }
 
